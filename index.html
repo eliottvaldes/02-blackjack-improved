@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BlackJack Game</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- local styles import -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+  </head>
+  <body>
+
+
+    <header class="title">
+        BlackJack
+    </header>
+
+    <div class="row mt-4">
+        <div class="col text-center">
+
+            <button id="btn-new-game" class="mx-2 btn btn-sm btn-danger">
+                New Game
+            </button>
+            <button id="btn-get-card" disabled="disabled" class="mx-2 btn btn-sm btn-primary">
+                Get Card
+            </button>
+            <button id="btn-stop" disabled="disabled" class="mx-2 btn btn-sm btn-warning">
+                Stop
+            </button>
+        </div>        
+
+    </div>
+
+    <div class="row container">
+        <div class="col">
+            <h1>
+                Player points - <small id="player-points">(0)</small>
+            </h1>
+            <br>
+            <div id="player-cards" class="div-user-cards">
+                <!-- <img class="card" src="" alt="" srcset=""> -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="row container" >
+        <div class="col">
+            <h1>
+                Computer points - <small id="computer-points">(0)</small>
+            </h1>
+            <br>
+            <div id="computer-cards" class="div-user-cards">
+                <!-- <img class="card" src="" alt="" srcset=""> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- import our library underscore-min.js -->
+    <script src="assets/js/underscore-min.js"></script>
+    <!-- import our game.js file -->
+    <script src="assets/js/game-min.js"></script>
+
+    <script>
+        blackjack.startGame();
+    </script>
+
+  </body>
+</html>
